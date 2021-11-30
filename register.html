@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Infinity</title>
+    <link rel="shortcut icon" href="img/logo.ico" />
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" type='text/css' />
+    <link rel="stylesheet" type="text/css" href="css/app.css" />
+    <!-- Include CSS File Here -->
+
+
+<meta content="noindex, nofollow" name="robots">
+<link href="css/register.css" rel="stylesheet">
+<script src="js/registere.js"></script>
+<!-- Include JS File Here -->
+
+  </head>
+  <style>
+body{
+  background-image:url("https://www.linkpicture.com/q/background_19.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+</style>
+  <body>
+   <header style="background-color: white; box-shadow: 0 1px 4px rgba(0, 0, 0, .1);">
+    <div class="container" style="padding-top: 8px;padding-bottom: 8px;">
+     <div class="grid grid-two">
+       <a href="index.html"><IMG class="displayed" src="img/logo.jpg" alt="logo" 
+        style="height: 80px ;"/>
+
+     </div>
+     <div class="grid grid-two" style="padding-top: 24px;padding-right: 5px;padding-left: 5;text-align: right;">
+      
+      <a href="login.html"><img src="img/profile.png" alt="logo" 
+        class="mx-auto d-block" style="float: right;" />
+       <div class="grid grid-two" style="padding-right: 18px;padding-left: 18;text-align: right;float: right;">
+       <a href="mycart.html"><img src="img/shopping-cart.png" alt="logo" 
+        class="mx-auto d-block" style="float: right;" />
+         <div class="grid grid-two" style="padding-right: 18px;padding-left: 18;text-align: right;float: right;">
+        <a href="mycart.html"><img src="img/fav.png" alt="logo" 
+        class="mx-auto d-block" style="float: right;" />
+     </div>
+    </div>
+   </header>
+   <main class="container">
+
+    <nav id="product-nav" class="full">
+    <li><a href="index.html">INFINITY</a></li>
+     <li><a href="products.html">MEN</a></li>
+     <li><a href="products.html">WOMEN</a></li>
+     <li><a href="products.html">KIDS</a></li>
+     <li><a href="products.html">HOME & LIVING</a></li>
+      <li style="float: right"><a href="login.html">Sign-in</a></li>
+       <li style="float: right"><a href="register.html">Sign-up</a></li>
+    </nav>
+<div id="form_layout">
+<p id="head"></p>
+<!-- This segment displays the validation rule -->
+<h2> Sign-up</h2>
+<!-- Form starts from here -->
+<form onsubmit='return formValidation()'>
+<label>Full Name:</label>
+<input id='firstname' type='text'>
+<p id="p1"></p>
+<!-- This segment displays the validation rule for name -->
+<label>Username(6-8 characters):</label>
+<input id='username' type='text'>
+<p id="p2"></p>
+<!-- This segment displays the validation rule for user name -->
+<label>Email:</label>
+<input id='email' type='text'>
+<p id="p3"></p>
+<!-- This segment displays the validation rule for email -->
+<label>State:</label>
+<select id='state'>
+<option>
+Select
+</option>
+<option>
+Telangana
+</option>
+<option>
+Andhra Pradesh 
+</option>
+<option>
+Punjab
+</option>
+<option>
+Maharastra
+</option>
+<option>
+Delhi
+</option>
+<option>
+Tamil Nadu
+</option>
+<option>
+Kerala
+</option>
+<option>
+Karnataka
+</option>
+<option>
+Jammu and Kashmir
+</option>
+</select>
+<p id="p4"></p>
+<!-- This segment displays the validation rule for selection -->
+<label>Address:</label>
+<input id='addr' type='text'>
+<p id="p5"></p>
+<!-- This segment displays the validation rule for address -->
+<label>Zip Code:</label>
+<input id='zip' type='text'>
+<p id="p6"></p>
+<!-- This segment displays the validation rule for zip -->
+<input id="submit" type='submit' value='Sign up'>
+</form>
+</div>
+
+</main>
+   <footer>
+    <div class="container">
+    <div class="full">
+     <div class="grid grid-three">
+<!--      <h4 class="text-blue">PRODUCTS</h4>
+      <ul>
+       <small><li>Shirts</li></small>
+       <small><li>Chinos</li></small>
+       <small><li>Sweat shirts</li></small>
+      </ul>
+     </div>
+     <div class="grid grid-three">
+     <h4 class="text-blue">LINKS</h4>
+    <ul>
+        <small><li>About Us</li></small>
+       <small><li>FAQ</li></small>
+       <small><li>T&C</li></small>
+       <small><li>Track Orders</li></small>
+       <small><li>Shipping</li></small>
+       <small><li>Cancellation</li></small>
+       <small><li>Returns</li></small>
+       <small><li>Privacy Policy</li></small>
+       <small><li>Blog</li></small>
+      </ul>
+           </div>
+     <div class="grid grid-three">
+     <h4 class="text-blue">CONTACT</h4>
+      <ul>
+       <small><li>infinity - Facebook</li></small>
+      <small><li>infinity - Instagram</li></small>
+      <small><li>infinity@gmail.com</li></small>
+       <small><li>0808-267-2281782</li></small>
+  
+      </ul>
+     </div> -->
+     
+    </div><small>
+    <div style="text-align: center; padding: 16px;">
+      &copy; 2021 www.infinity.com. All rights reserved.
+    </div>
+    </div></small>
+     
+   </footer>
+<script type="text/javascript">
+ (function(d) {
+  var products = document.getElementsByClassName('product');
+  for(var i = products.length - 1;i >= 0 ; --i) {
+   products[i].onclick = function() {
+    var src = this.getElementsByTagName('img')[0].src;
+    document.location.href = 'demo.html#' +  src;
+   }
+  }
+ })(document);
+
+</script>
+</body>
+</html>
+</body>
+</html>

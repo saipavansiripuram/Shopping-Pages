@@ -1,0 +1,339 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Infinity</title>
+    <link rel="shortcut icon" href="img/logo.ico" />
+    <meta charset="utf-8" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" type='text/css' />
+   
+    <link rel="stylesheet" type="text/css" href="css/app.css" />
+  </head>
+
+  <body>
+  <style>
+body{
+  background-image:url("https://www.linkpicture.com/q/background_19.jpg");
+    height: 100%;
+    background-position: end;
+
+    /*background-repeat:no-repeat;*/
+    background-size: cover;
+     background-origin: content-box;
+    }
+
+</style>
+   <header style="background-color: white; box-shadow: 0 2px 3px rgba(1, 2, 3, .5);">
+    <div class="container" style="padding-top: 8px;padding-bottom: 8px;">
+     <div class="grid grid-two">
+       <a href="index.html"><IMG class="displayed" src="img/logo.jpg" alt="logo" 
+        style="height: 80px ;"/>
+       
+     </div>
+      <div class="grid grid-two" style="padding-top: 24px;padding-right: 5px;padding-left: 5;text-align: right;">
+      
+      <a href="login.html"><img src="img/profile.png" alt="logo" 
+        class="mx-auto d-block" style="float: right;" />
+       <div class="grid grid-two" style="padding-right: 18px;padding-left: 18;text-align: right;float: right;">
+       <a href="mycart.html"><img src="img/shopping-cart.png" alt="logo" 
+        class="mx-auto d-block" style="float: right;" />
+         <div class="grid grid-two" style="padding-right: 18px;padding-left: 18;text-align: right;float: right;">
+        <a href="mycart.html"><img src="img/fav.png" alt="logo" 
+        class="mx-auto d-block" style="float: right;" />
+     </div>
+    </div>
+
+   </header>
+
+   <main class="container">
+      
+
+   <nav id="product-nav" class="full">
+      
+     <li><a href="index.html">INFINITY</a></li>
+     <li><a href="products.html">MEN</a></li>
+     <li><a href="products.html">WOMEN</a></li>
+     <li><a href="products.html">KIDS</a></li>
+     <li><a href="products.html">HOME & LIVING</a></li>
+    <!--   <li style="float: right"><a href="register.html">Sign-up</a></li>
+     <li style="float: right"><a href="login.html">Sign-in</a></li>
+      -->
+    </nav>
+    <!--   For image slider -->
+    <div class="full">
+    <div class="container">
+        <style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+/*float: none;
+     margin-left: auto;
+     margin-right: auto;*/
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 4.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <!-- <div class="numbertext">1 / 3</div> -->
+  <img src="img/product/banners2/2.jpg" style="width:100%">
+  <!-- <div class="text">Caption Text</div> -->
+</div>
+
+<div class="mySlides fade">
+ <!--  <div class="numbertext">2 / 3</div> -->
+  <img src="img/product/banners2/1.jpg" style="width:100%">
+  <!-- <div class="text">Caption Two</div> -->
+</div>
+
+<div class="mySlides fade">
+  <!-- <div class="numbertext">3 / 3</div> -->
+  <img src="img/product/banners2/2.jpg" style="width:100%">
+<!--   <div class="text">Caption Three</div> -->
+</div>
+<div class="mySlides fade">
+  <!-- <div class="numbertext">1 / 3</div> -->
+  <img src="img/product/banners2/3.jpg" style="width:100%">
+  <!-- <div class="text">Caption Text</div> -->
+</div>
+
+<div class="mySlides fade">
+ <!--  <div class="numbertext">2 / 3</div> -->
+  <img src="img/product/banners2/4.jpg" style="width:100%">
+  <!-- <div class="text">Caption Two</div> -->
+</div>
+
+<div class="mySlides fade">
+  <!-- <div class="numbertext">3 / 3</div> -->
+  <img src="img/product/banners2/5.jpg" style="width:100%">
+<!--   <div class="text">Caption Three</div> -->
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1} 
+  slides[slideIndex-1].style.display = "block"; 
+  setTimeout(showSlides, 8000); // Change image every 2 seconds
+}
+}
+
+</script>
+     </div>
+    </div>
+ 
+    <div> 
+     <center><h1>INFINITY</h1></center>
+     <ul>
+        <p>Infinty is a International fashion e-commerce company headquarted in Hyderabad,Telangana,India.The company was founded in 2018. Infinity is a family of brands and businesses, making it possible for customers around the world to express themselves through fashion and design, and to choose a more sustainable lifestyle. We create value for people and society in general by delivering our customer offering and by developing with a focus on sustainable and profitable growth.</p> 
+     </li>
+   </div>
+     <center><h1> GOALS AND AMBITIONS </h1></center>
+     <ul>
+      <p>The biggest part of the fashion industry’s environmental footprint comes in the production phase. So, when a garment is reused or resold, the lifespan of the product increases. Also, when substituting a purchase of a new product for a used one, valuable resources are saved and CO2 emissions decrease.
+      “We have a responsibility to give customers the option to reduce their carbon footprint in convenient and attractive ways,” she says. “Expressing who you are through fashion doesn’t always have to mean buying something new.”</p>
+     
+</ul>
+<center><h1> JOIN US </h1></center>
+<ul>
+    <p>A workplace where people can come together and share their knowledge, experience and ideas with each other is key for inspiring and attracting both customers and talents
+    — all over the world.</p>
+      
+    <p>We aim to be the best employer around, looking after and caring for all our colleagues. When you start a career with us, there’s no limit to where it can take you. We will trust you with great responsibility from the start, encourage an entrepreneurial spirit and reward a passionate mindset. Welcome to a dynamic workplace where you contribute by being yourself.<p>
+</ul>
+<br><br>
+<center>For questions & queries: </br>infinity.com </br> 0808-267-2281782 </br>
+
+</br>
+</br>
+
+  </main>
+   <footer>
+    <div class="container">
+    <div class="full">
+     <!-- <div class="grid grid-three">
+     <h4 class="text-blue">PRODUCTS</h4>
+      <ul>
+       <small><li>Shirts</li></small>
+       <small><li>Chinos</li></small>
+       <small><li>Sweat shirts</li></small>
+      </ul>
+     </div>
+     <div class="grid grid-three">
+     <h4 class="text-blue">LINKS</h4>
+    <ul>
+        <small><li>About Us</li></small>
+       <small><li>FAQ</li></small>
+       <small><li>T&C</li></small>
+       <small><li>Track Orders</li></small>
+       <small><li>Shipping</li></small>
+       <small><li>Cancellation</li></small>
+       <small><li>Returns</li></small>
+       <small><li>Privacy Policy</li></small>
+       <small><li>Blog</li></small>
+      </ul>
+           </div>
+     <div class="grid grid-three">
+     <h4 class="text-blue">CONTACT</h4>
+      <ul>
+       <small><li>infinity - Facebook</li></small>
+      <small><li>infinity - Instagram</li></small>
+      <small><li>infinity@gmail.com</li></small>
+       <small><li>0808-267-2281782</li></small>
+  
+      </ul>
+     </div>-->
+     
+   </div><small>
+    <div style="text-align: center; padding: 16px;">
+      &copy; 2021 www.infinity.com. All rights reserved.
+    </div>
+    </div></small>
+     
+   </footer>
+   <script type="text/javascript">
+    (function(d) {
+     var products = document.getElementsByClassName('product');
+     for(var i = products.length - 1;i >= 0 ; --i) {
+      products[i].onclick = function() {
+       var src = this.getElementsByTagName('img')[0].src;
+       document.location.href = 'demo.html#' +  src;
+      }
+     }
+    })(document);
+
+   </script>
+  </body>
+</html>

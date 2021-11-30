@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Infinity</title>
+    <link rel="shortcut icon" href="img/logo.ico" />
+    <meta charset="utf-8" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" type='text/css' />
+    <link rel="stylesheet" type="text/css" href="css/app.css" />
+    <!-- Include CSS File Here -->
+<link rel="stylesheet" href="css/login.css"/>
+<link rel="stylesheet" href="css/mycart.css"/>
+<!-- Include JS File Here -->
+<script src="js/login.js"></script>
+  </head>
+  <style>
+body{
+  background-image:url("https://www.linkpicture.com/q/background_19.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+</style>
+  <body>
+   <header style="background-color: white; box-shadow: 0 1px 4px rgba(0, 0, 0, .1);">
+    <div class="container" style="padding-top: 8px;padding-bottom: 8px;">
+     <div class="grid grid-two">
+       <a href="index.html"><img src="img/logo.jpg" alt="logo" style="height: 80px ;" />
+
+     </div>
+     <div class="grid grid-two" style="padding-top: 24px;padding-right: 5px;padding-left: 5;text-align: right;">
+      
+      <a href="login.html"><img src="img/profile.png" alt="logo" 
+        class="mx-auto d-block" style="float: right;" />
+       <div class="grid grid-two" style="padding-right: 18px;padding-left: 18;text-align: right;float: right;">
+       <a href="mycart.html"><img src="img/shopping-cart.png" alt="logo" 
+        class="mx-auto d-block" style="float: right;" />
+         <div class="grid grid-two" style="padding-right: 18px;padding-left: 18;text-align: right;float: right;">
+        <a href="mycart.html"><img src="img/fav.png" alt="logo" 
+        class="mx-auto d-block" style="float: right;" />
+     </div>
+    </div>
+   </header>
+   <main class="container">
+
+    <nav id="product-nav" class="full">
+     <li><a href="index.html">INFINITY</a></li>
+     <li><a href="products.html">MEN</a></li>
+     <li><a href="products.html">WOMEN</a></li>
+     <li><a href="products.html">KIDS</a></li>
+     <li><a href="products.html">HOME & LIVING</a></li>
+     <!-- <li style="float: right"><a href="login.html">Sign-in</a></li>
+      <li style="float: right"><a href="register.html">Signup</a></li> -->
+    </nav>
+  </main>
+  			</tr>
+  			</table>
+  				<div class="container">
+  				<section>
+  					<form id="payment" action="menus.html">
+  					<div class="details">
+  						<p id="p1">PAYMENT DETAILS</p>
+  					</div>
+
+  				                <label for=name >Name</label>
+  				                <input id="name" name="name" type="text" required autofocus />
+
+  				                <label for=email>Email</label>
+  				                <input id="email" name="email" type="email" required /></br>
+
+  				                <label for=phone>Phone</label>
+  				                <input id="phone" name="phone" type="tel" required />
+
+  				                <label for=address>Address</label>
+  				                <input id="address" name="address" required>
+
+  				                <label for=postcode>House Number</label>
+  				                <input id="postcode" name=postcode type="text" required /></br>
+
+  				             <legend id="card">Visa / Mastercard /Rupay</legend>
+  				                <label for=Enumber>Card Details</label>
+  				                <input id=cardnumber name=cardnumber type=number required />
+
+
+  				                <label for=namecard>Otp</label>
+
+  				                <input type="password" name="password">
+
+  				        		<input type="button" value="Order" id="order" onclick="validate()">
+  							</form>
+  					</section>
+
+  				</div>
+
+
+  </main>
+   <footer>
+    <div class="container">
+    <div class="full">
+     <div class="grid grid-three">
+     <h4 class="text-blue">PRODUCTS</h4>
+      <ul>
+       <small><li>Shirts</li></small>
+       <small><li>Chinos</li></small>
+       <small><li>Sweat shirts</li></small>
+      </ul>
+     </div>
+     <div class="grid grid-three">
+     <h4 class="text-blue">LINKS</h4>
+    <ul>
+        <small><li>About Us</li></small>
+       <small><li>FAQ</li></small>
+       <small><li>T&C</li></small>
+       <small><li>Track Orders</li></small>
+       <small><li>Shipping</li></small>
+       <small><li>Cancellation</li></small>
+       <small><li>Returns</li></small>
+       <small><li>Privacy Policy</li></small>
+       <small><li>Blog</li></small>
+      </ul>
+           </div>
+     <div class="grid grid-three">
+     <h4 class="text-blue">CONTACT</h4>
+      <ul>
+       <small><li>infinity - Facebook</li></small>
+      <small><li>infinity - Instagram</li></small>
+      <small><li>infinity@gmail.com</li></small>
+       <small><li>0808-267-2281782</li></small>
+  
+      </ul>
+     </div>
+     
+    </div><small>
+    <div style="text-align: center; padding: 16px;">
+      &copy; 2021 www.infinity.com. All rights reserved.
+    </div>
+    </div></small>
+     
+   </footer>
+  <script type="text/javascript">
+   (function(d) {
+    var products = document.getElementsByClassName('product');
+    for(var i = products.length - 1;i >= 0 ; --i) {
+     products[i].onclick = function() {
+      var src = this.getElementsByTagName('img')[0].src;
+      document.location.href = 'demo.html#' +  src;
+     }
+    }
+   })(document);
+
+  </script>
+ </body>
+ </html>

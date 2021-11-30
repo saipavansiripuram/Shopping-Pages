@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Infinity</title>
+    <link rel="shortcut icon" href="img/logo.ico" />
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" type='text/css' />
+    <link rel="stylesheet" type="text/css" href="css/app.css" />
+  </head>
+  <body>
+   <header style="background-color: white; box-shadow: 0 1px 4px rgba(0, 0, 0, .1);">
+    <div class="container" style="padding-top: 8px;padding-bottom: 8px;">
+     <div class="grid grid-two">
+       <a href="index.html"><img src="img/logo.jpg" alt="logo" style="height: 80px ;" />
+
+     </div>
+     <div class="grid grid-two" style="padding-top: 24px;padding-right: 5px;padding-left: 5;text-align: right;">
+      
+      <a href="login.html"><img src="img/profile.png" alt="logo" 
+        class="mx-auto d-block" style="float: right;" />
+       <div class="grid grid-two" style="padding-right: 18px;padding-left: 18;text-align: right;float: right;">
+       <a href="mycart.html"><img src="img/shopping-cart.png" alt="logo" 
+        class="mx-auto d-block" style="float: right;" />
+         <div class="grid grid-two" style="padding-right: 18px;padding-left: 18;text-align: right;float: right;">
+        <a href="mycart.html"><img src="img/fav.png" alt="logo" 
+        class="mx-auto d-block" style="float: right;" />
+     </div>
+    </div>
+   </header>
+   <main class="container">
+    <nav id="product-nav" class="full">
+     <li><a href="index.html">INFINITY</a></li>
+     
+     <li><a href="products.html">MEN</a></li>
+     <li><a href="products.html">WOMEN</a></li>
+     <li><a href="products.html">KIDS</a></li>
+     <li><a href="products.html">HOME & LIVING</a></li>
+    <!--  <li style="float: right"><a href="login.html">Sign-in</a></li>
+      <li style="float: right"><a href="register.html">Sign-up</a></li> -->
+    </nav>
+   <div class="full">
+    <div class="grid grid-two">
+     <div class="detail">
+      <!-- <h1>Shirts</h1> -->
+      <img src="" id="demo-img" style="display: none;" />
+      <!-- <p></p> -->
+      <span id="price">Rs 499</span>
+     
+      <button class="button green" onclick="alert('Added to cart');"
+      >🛒</button>
+      <button class="button blue" onclick="alert('Added To Favourite');">❤️</button>
+     </div>
+    </div>
+    <div class="grid grid-two">
+    <div class="box" style="float: right;" id="other">
+     <h3 class="uppr text-blue">Similar products</h3>
+
+    </div>
+    </div>
+   </div>
+   </main>
+   <script type="text/javascript">
+    /*load product based upon the url*/
+     var uri = window.location.href;
+     var img = 'img/product/shoes/1.jpeg';
+     if (uri.indexOf("#") > 0) {
+      img = uri.substring(uri.indexOf('#') + 1);
+      //dynamically load other similar type of product
+      //get the type like shoes , jeans etc
+      var type = img.substring(img.indexOf('product/') + 8).split('/')[0];
+      //get current image name
+
+      var numb = parseInt(img.substring(img.indexOf('product/') + 8).split('/')[1]);
+      var out = '';
+      for(var i = 1; i <= 5; i++) {
+        if (i == numb) continue;
+        out += '<div class="product"> <h3></h3> <img src="img/product/' + type + '/' + i + '.jpg" /> </div>';
+      }
+      document.getElementById('other').innerHTML += out;
+     }
+     document.getElementById('price').innerHTML ="Rs: <strong>" + Math.round(Math.random() * 1500) + "</strong>";
+     document.getElementById('demo-img').src = img;
+     document.getElementById('demo-img').style.display = 'block';
+   </script>
+     
+   <footer>
+    <div class="container">
+    <div class="full">
+     <div class="grid grid-three">
+     <h4 class="text-blue">PRODUCTS</h4>
+      <ul>
+       <small><li>Shirts</li></small>
+       <small><li>Chinos</li></small>
+       <small><li>Sweat shirts</li></small>
+      </ul>
+     </div>
+     <div class="grid grid-three">
+     <h4 class="text-blue">LINKS</h4>
+    <ul>
+        <small><li>About Us</li></small>
+       <small><li>FAQ</li></small>
+       <small><li>T&C</li></small>
+       <small><li>Track Orders</li></small>
+       <small><li>Shipping</li></small>
+       <small><li>Cancellation</li></small>
+       <small><li>Returns</li></small>
+       <small><li>Privacy Policy</li></small>
+       <small><li>Blog</li></small>
+      </ul>
+           </div>
+     <div class="grid grid-three">
+     <h4 class="text-blue">CONTACT</h4>
+      <ul>
+       <small><li>infinity - Facebook</li></small>
+      <small><li>infinity - Instagram</li></small>
+      <small><li>infinity@gmail.com</li></small>
+       <small><li>0808-267-2281782</li></small>
+  
+      </ul>
+     </div>
+     
+    </div><small>
+    <div style="text-align: center; padding: 16px;">
+      &copy; 2021 www.infinity.com. All rights reserved.
+    </div>
+    </div></small>
+     
+   </footer>
+  </body>
+</html>

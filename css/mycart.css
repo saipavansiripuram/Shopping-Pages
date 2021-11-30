@@ -1,0 +1,48 @@
+div #payment{
+	background: #ffffff10;
+    backdrop-filter:blur(5px);
+    -webkit-backdrop-filter:blur(5px);
+  float: none;
+     margin-left: auto;
+     margin-right: auto;
+	 box-sizing:border-box;
+	 box-decoration-break:initial;
+	 border:1px solid gray;
+	 box-shadow:initial;
+	 width:500px;
+	/* float:center;*/
+	 padding:30px 40px 30px;
+}
+input #name{
+	font-family:sans-serif;
+}
+label {
+	margin-top: 6px;
+	display: block;
+
+}
+form>input{
+	padding: 2px 8px;
+}
+html body{
+	background-color:none;
+}
+input[type=button]{
+font-size: 16px;
+background: linear-gradient(#ff7c22 8%, #ffe600 100%);
+border: 1px solid #e5a900;
+color: #4E4D4B;
+font-weight: bold;
+cursor: pointer;
+width: 100%;
+border-radius: 5px;
+padding: 10px 0;
+outline:none;
+}
+/*input[type=button]:hover{
+background: linear-gradient(#ffe600 5%, #ffbc00 100%);
+}*/
+#form_id {
+  max-width: 500px;
+}
+
