@@ -55,6 +55,7 @@ html, body {
  }
  .grid-three {
   width: 33.333%;
+ /* color: whitesmoke;*/
  }
  .grid-four {
   width: 25%;
@@ -140,12 +141,14 @@ html, body {
   font-size: 18px;
  }
  footer {
+  align-content: center;
   margin-top: 32px;
+
  }
  footer ul {
   list-style: none;
   font-size: 18px;
-  padding: 0;
+  padding-left: 10px;
  }
  .detail {
   text-align: center;

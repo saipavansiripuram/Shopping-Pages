@@ -2,16 +2,20 @@
 <html>
   <head>
     <title>Infinity</title>
-    <link rel="shortcut icon" href="img/logo.ico" class="mx-auto d-block"/>
-    <meta charset="utf-8" />
-     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" type='text/css' />
+    <link rel="shortcut icon" href="img/logo.ico" >
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" type='text/css' />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     
     <link rel="stylesheet" type="text/css" href="css/app.css" />
   </head>
   <body>
-   <header style="background-color: white; box-shadow: 0 1px 4px rgba(0, 0, 0, .1);">
-    <div class="container" style="padding-top: 8px;padding-bottom: 8px;float: center;">
+<!-- header tag  First grid-->
+  <header style="background-color: white; box-shadow: 0 1px 4px rgba(0, 0, 0, .1);">
+    <div class="container" style="padding-top: 8px;padding-bottom: 8px;">
      <div class="grid grid-two">
-      
        <a href="index.html"><IMG class="displayed" src="img/logo.jpg" alt="logo" 
         style="height: 80px ;"/>
 
@@ -26,13 +30,14 @@
          <div class="grid grid-two" style="padding-right: 18px;padding-left: 18;text-align: right;float: right;">
         <a href="mycart.html"><img src="img/fav.png" alt="logo" 
         class="mx-auto d-block" style="float: right;" />
+        
      </div>
     </div>
    </header>
    <div>
+    <!-- header tag  Second grid-->
    <main class="container">
     <nav id="product-nav" class="full">
-     <!-- <li><a href="index.html">Home</a></li> -->
      <li><a href="products.html">MEN</a></li>
      <li><a href="products.html">WOMEN</a></li>
      <li><a href="products.html">KIDS</a></li>
@@ -40,10 +45,7 @@
      <li><a href="about.html">ABOUT US</a></li>
      <li><a href="contact.html">CONTACT US</a></li>
 
-  <!--          <li style="float: right"><a href="login.html">Sign-in</a></li>
-      <li style="float: right"><a href="register.html">
-      Sign-up</a></li> -->
-   <!-- <p>Animated search bar</p> -->   
+<!-- <p>Animated search bar</p> -->   
    
    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style> 
@@ -79,12 +81,7 @@ input[type=text]:focus {
     </nav>
     <!-- Sliding images -->
     <div class="full">
-    <!--   <header style="background-color: white; box-shadow: 0 5px 4px rgba(0, 0, 2, .1);"> -->
     <div class="container">
-    <!--  <div class="grid grid-two">
-       -->
-      <!--  <a href="index.html"><IMG class="displayed" src="img/logo.jpg" alt="logo" 
-        style="height: 80px ;"/></a> -->
         <style>
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
@@ -166,9 +163,9 @@ float: none;
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 2.5s;
   animation-name: fade;
-  animation-duration: 2.5s;
+  animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fade {
@@ -188,7 +185,7 @@ float: none;
 </style>
 </head>
 <body>
-
+<!-- slide show images -->
 <div class="slideshow-container">
 
 <div class="mySlides fade">
@@ -266,22 +263,28 @@ function showSlides() {
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1} 
   slides[slideIndex-1].style.display = "block"; 
-  setTimeout(showSlides, 4000); // Change image every 2 seconds
+  setTimeout(showSlides, 1000); // Change image every 2 seconds
 }
 }
 </script>
      </div>
     </div>
     <br></br>
-    <div class="full">
-    <div class="grid grid-two" style="padding-right: 8px;">
+   <!--  <div class="full">
+    <div class="grid grid-two" style="padding-right: 8px;"> -->
+      <div class="row">
+    <div class="col-sm">
+
      <div style="background-color: #fff;border: 1px solid #dededf;box-sizing: border-box;padding: 16px;">
      <!-- start a product line -->
      <center><h2>SWEAT SHIRTS</h2></center>
       <div class="product-line full">
        <div class="product grid grid-two">
+<!--         <div class="row">
+    <div class="col-sm"> -->
+
         <!-- <center><h2>Sweet Shirts</h2></center> -->
-        <img src="img/product/sweatshirts/1.jpg" />
+        <img src="img/product/sweatshirts/1.jpg" style="max-width:100%;"/>
         <b><p>HOODIE - H&M</p></b>
        <!--  <p>black sweat shirt</p>
         <p>₹800</p> -->
@@ -289,7 +292,7 @@ function showSlides() {
        <!-- a product -->
        <div class="product grid grid-two">
     <!--     <h2>Sweet Shirt</h2> -->
-        <img src="img/product/sweatshirts/4.jpg" />
+        <img src="img/product/sweatshirts/4.jpg" style="max-width:100%;">
         <b><p>NIRVANA MEN| H&M </p></b>
        </div>
        <!-- a product -->
@@ -301,13 +304,13 @@ function showSlides() {
       <div class="product-line full">
        <div class="product grid grid-two">
        <!--  <h2>T-shirts</h2> -->
-        <img src="img/product/shirts/2.jpg" />
+        <img src="img/product/shirts/2.jpg" style="max-width:100%;"/>
         <b><p>ROADSTAR</p></b>
        </div>
        <!-- a product -->
        <div class="product grid grid-two">
         <!-- <h2>T-shirts</h2> -->
-        <img src="img/product/shirts/3.jpg" />
+        <img src="img/product/shirts/3.jpg" style="max-width:100%;"/>
         <b><p>DENIM</p></b>
        </div>
        <script type="text/javascript">
@@ -327,13 +330,13 @@ function showSlides() {
       <div class="product-line full">
        <div class="product grid grid-two"> 
         <!-- <h2>Jeans</h2> -->
-        <img src="img/product/chinos/1.jpg" />
+        <img src="img/product/chinos/1.jpg" style="max-width:100%;" />
         <b><p>H&M</p></b>
        </div>
        <!-- a product -->
        <div class="product grid grid-two">
         <!-- <h2>Jeans</h2> -->
-        <img src="img/product/chinos/5.jpg" />
+        <img src="img/product/chinos/5.jpg" style="max-width:100%;" />
         <b><p>LEVIS</p></b>
        </div>
        <!-- a product -->
@@ -351,7 +354,7 @@ function showSlides() {
        <center><h3 class="text-blue uppr">FESTIVE OFFERS</h3></center>
        <div class="product">
         <!-- <h2>white shirt</h2> -->
-        <img src="img/product/shirts/kurta.jpg" />
+        <img src="img/product/shirts/kurta.jpg" style="max-width:100%;" />
         <b><p>5% OFF ON KURTA'S</p></b>
       <!--   <p>starting ₹499</p> -->
        </div>
@@ -366,7 +369,7 @@ function showSlides() {
        <center><h3 class="text-blue uppr">ARRIVALS</h3></center>
        <div class="product">
        <!--  <h2>Jeans</h2> -->
-        <img src="img/product/shirts/rowdy.jpg" />
+        <img src="img/product/shirts/rowdy.jpg" style="max-width:100%;" />
         <b><p>ROWDY</p></b>
        </div>
       </div>
@@ -380,7 +383,7 @@ function showSlides() {
       <!--  <h3 class="text-blue uppr">Festive Discounts</h3> -->
        <div class="product">
         <!-- <h2>white shirt</h2> -->
-        <img src="img/product/shirts/festive.jpg" />
+        <img src="img/product/shirts/festive.jpg" style="max-width:100%" />
         <b><p>STARTING  ₹499 </p></b>
        <!--  <p>starting ₹499</p> -->
        </div>
@@ -394,7 +397,7 @@ function showSlides() {
        <!-- <h3 class="text-blue uppr">Arrivals</h3> -->
        <div class="product">
        <!--  <h2>Jeans</h2> -->
-        <img src="img/product/shirts/wrogn.jpg" />
+        <img src="img/product/shirts/wrogn.jpg" style="max-width:100%" />
         <b><p>WROGN</p></b>
        </div>
       </div>
@@ -424,10 +427,10 @@ function showSlides() {
 
    </main>
    <footer>
-    <div class="container">
+    <div class="container" style="background-color: #F5FCFF">
     <div class="full">
      <div class="grid grid-three">
-     <h4 class="text-blue">PRODUCTS</h4>
+     <h4 class="text-blue">&nbsp;&nbsp;PRODUCTS</h4>
       <ul>
        <small><li>Shirts</li></small>
        <small><li>Chinos</li></small>
@@ -435,7 +438,7 @@ function showSlides() {
       </ul>
      </div>
      <div class="grid grid-three">
-     <h4 class="text-blue">LINKS</h4>
+     <h4 class="text-blue">&nbsp;&nbsp;LINKS</h4>
     <ul>
         <small><li>About Us</li></small>
        <small><li>FAQ</li></small>
@@ -449,7 +452,7 @@ function showSlides() {
       </ul>
            </div>
      <div class="grid grid-three">
-     <h4 class="text-blue">CONTACT</h4>
+     <h4 class="text-blue">&nbsp;&nbsp;&nbsp;CONTACT</h4>
       <ul>
        <small><li>infinity - Facebook</li></small>
       <small><li>infinity - Instagram</li></small>
